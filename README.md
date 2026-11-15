@@ -3,7 +3,7 @@
 Building and publishing your own custom-trained Bengali voice cloning model and hosting it on Hugging Face for free public access involves a structured four-phase pipeline: **Dataset Preparation**, **Training on Google Colab (using a GPU)**, **Uploading to Hugging Face**, and **Deploying a Free Web Demo (Hugging Face Space)**.
 
 Open-source architectures like **Coqui XTTS-v2** or **IndicF5 / F5-TTS** are ideal for this because they support multi-lingual support, fine-tuning, and zero-shot cloning.
-[ehzawad/indicf5-bangla-tts](https://huggingface.co/ehzawad/indicf5-bangla-tts#:~:text=Collection%20including%20ehzawad%2Findicf5%2Dbangla%2Dtts.%20Bangla%20Text%2Dto%2DSpeech%20(TTS)%20Collection.,the%20conditions%20to%20access%20the%20files%20info.){target="_blank"}
+[ehzawad/indicf5-bangla-tts](https://huggingface.co/ehzawad/indicf5-bangla-tts#:~:text=Collection%20including%20ehzawad%2Findicf5%2Dbangla%2Dtts.%20Bangla%20Text%2Dto%2DSpeech%20(TTS)%20Collection.,the%20conditions%20to%20access%20the%20files%20info.){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
