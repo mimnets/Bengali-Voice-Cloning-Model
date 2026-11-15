@@ -3,15 +3,16 @@
 Building and publishing your own custom-trained Bengali voice cloning model and hosting it on Hugging Face for free public access involves a structured four-phase pipeline: **Dataset Preparation**, **Training on Google Colab (using a GPU)**, **Uploading to Hugging Face**, and **Deploying a Free Web Demo (Hugging Face Space)**.
 
 Open-source architectures like **Coqui XTTS-v2** or **IndicF5 / F5-TTS** are ideal for this because they support multi-lingual support, fine-tuning, and zero-shot cloning.
-[ehzawad/indicf5-bangla-tts](https://huggingface.co/ehzawad/indicf5-bangla-tts#:~:text=Collection%20including%20ehzawad%2Findicf5%2Dbangla%2Dtts.%20Bangla%20Text%2Dto%2DSpeech%20(TTS)%20Collection.,the%20conditions%20to%20access%20the%20files%20info.){:target="_blank" rel="noopener noreferrer"}
+[ehzawad/indicf5-bangla-tts](https://huggingface.co/ehzawad/indicf5-bangla-tts#:~:text=Collection%20including%20ehzawad%2Findicf5%2Dbangla%2Dtts.%20Bangla%20Text%2Dto%2DSpeech%20(TTS)%20Collection.,the%20conditions%20to%20access%20the%20files%20info.)
 
 ---
 
 ### Phase 1: Prepare Your Bengali Dataset
 
 To train a clean voice model, you need a dataset structured in standard **LJSpeech format**.
+[Fine Tuning XTTS-v2 English](https://www.kaggle.com/code/maxbr0wn/fine-tuning-xtts-v2-english?scriptVersionId=173570803)
 
-1. **Record Audio:** Record 10 to 30 minutes of clean, high-quality audio of you speaking Bengali clearly. Avoid background noise, echo, or heavy compression.
+1. **Record Audio:** Record 10 to 30 minutes of clean, high-quality audio of you speaking Bengali clearly. Avoid background noise, echo, or heavy compression. [NLP-colab-trainer](https://github.com/Foysal87/NLP-colab-trainer)
 2. **Slice Clips:** Cut the recordings into short segments (3 to 10 seconds long) and export them as `.wav` files (Mono, 22050 Hz or 24000 Hz sample rate).
 3. **Organize Directory Structure:** Create a folder structure in your Google Drive or Colab workspace:
 ```text
@@ -52,7 +53,7 @@ drive.mount('/content/drive')
 
 ```
 
-#### 2. Configure Training Settings
+#### 2. Configure Training Settings [XTTS_V2-finetuning](https://github.com/gokhaneraslan/XTTS_V2-finetuning)
 
 If using Coqui XTTS-v2 (which handles multi-lingual weights and voice cloning exceptionally well), configure your training run:
 
